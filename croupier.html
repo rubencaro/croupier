@@ -30,7 +30,8 @@
 </body>
 
 <template name="task">
-  <li class="{{#if checked}}checked{{/if}} {{#if private}}private{{/if}}">
+  <li class="{{#if checked}}checked{{/if}} {{#if private}}private{{/if}}"
+      draggable="true">
     <button class="delete">&times;</button>
 
     <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
