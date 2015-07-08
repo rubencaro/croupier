@@ -11,6 +11,7 @@ A very skilled card manager
 
 ## TODOs
 
+* Basic router https://github.com/iron-meteor/iron-router/blob/master/Guide.md  
 * Basic card template
 * Basic list space definition
 * Basic project space definition
