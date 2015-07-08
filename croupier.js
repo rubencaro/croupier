@@ -61,6 +61,7 @@ if (Meteor.isClient) {
     },
     "dragstart": function (e) {
       console.log('dragstart');
+      e.originalEvent.dataTransfer.setData('text/plain', this._id);
     },
     "dragenter": function (e) {
       console.log('dragenter');
@@ -76,6 +77,8 @@ if (Meteor.isClient) {
     "drop": function (e) {
       console.log('drop');
       e.stopPropagation(); // stops the browser from redirecting.
+      Meteor.call("reorderTask", this.position,
+                      e.originalEvent.dataTransfer.getData('text/plain'));
       return false;
     },
     "dragend": function (e) {
@@ -136,6 +139,19 @@ Meteor.methods({
     }
 
     Tasks.update(taskId, { $set: { private: setToPrivate } });
+  },
+  reorderTask: function (destPosition, taskId) {
+    // gather the surrounding positions
+    var limits = Tasks.find({position: { $lte: destPosition }},
+                              { sort: {position: -1},
+                                fields: {position: 1},
+                                limit: 2 }).fetch();
+    // by default, locate above the first one
+    var newPosition = limits[0].position - 1.0;
+    // if there is a second one, place between them
+    if(limits[1]) newPosition = (limits[0].position + limits[1].position)/2.0;
+
+    Tasks.update(taskId, { $set: { position: newPosition } });
   }
 });
 
