@@ -11,8 +11,6 @@ A very skilled card manager
 
 ## TODOs
 
-* Main DnD support http://www.html5rocks.com/en/tutorials/dnd/basics/
-* Global DnD sorting using administrable float capability. The auto assignment of order number is the mean of the previous and the next order numbers. The manual assignment allows for fine adjustment.
 * Basic card template
 * Basic list space definition
 * Basic project space definition
