@@ -1,6 +1,5 @@
-<template name="task">
-  <li class="{{#if checked}}checked{{/if}} {{#if private}}private{{/if}}"
-      draggable="true">
+<template name="TaskForm">
+  <div class="{{#if checked}}checked{{/if}} {{#if private}}private{{/if}}">
     <button class="delete">&times;</button>
 
     <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
@@ -19,6 +18,7 @@
       <img class="avatar" src="{{picture}}"/>
        - {{text}} - {{position}}
     </span>
-    <a href="/task/{{_id}}">Edit</a>
-  </li>
+
+    <button class="close">Close</button>
+  </div>
 </template>
