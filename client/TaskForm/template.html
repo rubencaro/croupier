@@ -2,6 +2,13 @@
   <div class="{{#if checked}}checked{{/if}} {{#if private}}private{{/if}}">
     <button class="delete">&times;</button>
 
+    <input list="list-selector" class="select-list" value="{{firstList}}">
+    <datalist id="list-selector">
+      {{#each visible_lists}}
+        <option value="{{this}}"></option>
+      {{/each}}
+    </datalist>
+
     <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
 
     {{#if isOwner}}
@@ -16,7 +23,7 @@
 
     <span class="text">
       <img class="avatar" src="{{picture}}"/>
-       - {{text}} - {{position}}
+       - {{text}} - {{position}} - {{lists}}
     </span>
 
     <button class="close">Close</button>

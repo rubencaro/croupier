@@ -9,6 +9,8 @@
 <template name="Home">
   <div class="container">
     {{> Header}}
-    {{> List}}
+    {{#each visible_lists}}
+      {{> List}}
+    {{/each}}
   </div>
 </template>
