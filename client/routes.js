@@ -1,3 +1,7 @@
+Router.route('/', function () {
+  this.render('Home');
+});
+
 Router.route('/task/:_id', function () {
   this.render('TaskForm', {
     data: function () {

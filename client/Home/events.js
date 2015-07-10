@@ -1,4 +1,4 @@
-Template.body.events({
+Template.Home.events({
   "submit .new-task": function (event) {
     // This function is called when the new task form is submitted
 

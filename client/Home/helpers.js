@@ -1,4 +1,4 @@
-Template.body.helpers({
+Template.Home.helpers({
   tasks: function () {
     if (Session.get("hideCompleted")) {
       // If hide completed is checked, filter tasks

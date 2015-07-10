@@ -1,11 +1,15 @@
 <head>
-  <title>Todo List</title>
+  <title>Croupier</title>
 </head>
 
 <body>
+</body>
+
+
+<template name="Home">
   <div class="container">
     <header>
-      <h1>Todo List ({{incompleteCount}})</h1>
+      <h1>Task List ({{incompleteCount}})</h1>
 
       <label class="hide-completed">
         <input type="checkbox" checked="{{hideCompleted}}" />
@@ -27,4 +31,4 @@
       {{/each}}
     </ul>
   </div>
-</body>
+</template>
