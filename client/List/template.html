@@ -1,0 +1,10 @@
+<template name="List">
+  <div>
+    <h1>Task List ({{incompleteCount}})</h1>
+    <ul>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+  </div>
+</template>
