@@ -1,4 +1,4 @@
-<template name="Header">
+<template name="header">
   <header>
     <label class="hide-completed">
       <input type="checkbox" checked="{{hideCompleted}}" />
@@ -8,9 +8,7 @@
     {{> loginButtons}}
 
     {{#if currentUser}}
-      <form class="new-task">
-        <input type="text" name="text" placeholder="Type to add new tasks" />
-      </form>
+      {{> addTaskForm}}
     {{/if}}
   </header>
 </template>
