@@ -8,7 +8,14 @@
     {{> loginButtons}}
 
     {{#if currentUser}}
-      {{> addTaskForm}}
+      <button class="show-add-task-form">Add task</button>
+      <div id="add-task-form" style="display:none;">
+        {{> addTaskForm}}
+      </div>
+      <button class="show-add-list-form">Add list</button>
+      <div id="add-list-form" style="display:none;">
+        {{> addListForm}}
+      </div>
     {{/if}}
   </header>
 </template>

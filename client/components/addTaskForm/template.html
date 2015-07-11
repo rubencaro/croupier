@@ -4,13 +4,11 @@
     <input type="text" name="text" placeholder="Type to add new tasks" />
 
     <label for="list">into list</label>
-    <input name="list" class="select-list" value="{{chooseDefault visible_lists}}"
-      list="add-task-lists">
-    <datalist id="add-task-lists">
-      {{#each visible_lists}}
-        <option value="{{this}}"></option>
+    <select name="list" class="select-list">
+      {{#each lists}}
+        <option value="{{_id}}" selected="{{isDefault}}">{{name}}</option>
       {{/each}}
-    </datalist>
+    </select>
 
     <input type="submit" value="Send"/>
   </form>

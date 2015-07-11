@@ -1,5 +1,5 @@
 Template.addTaskForm.helpers({
-  chooseDefault: function (visible_lists) {
-    return visible_lists[0];
+  isDefault: function () {
+    return Lists.findOne({},{sort: {name: -1}})._id == this._id;
   }
 });

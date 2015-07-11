@@ -7,6 +7,15 @@ Meteor.publish("tasks", function () {
   });
 });
 
+Meteor.publish("lists", function () {
+  return Lists.find({
+    $or: [
+      { private: {$ne: true} },
+      { owner: this.userId }
+    ]
+  });
+});
+
 Meteor.publish("userData", function () {
   if (this.userId) {
     return Meteor.users.find({_id: this.userId},
