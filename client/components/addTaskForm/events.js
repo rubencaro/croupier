@@ -7,8 +7,9 @@ Template.addTaskForm.events({
 
     Meteor.call("addTask", text, list);
 
-    // Clear form
+    // Clear/hide form
     event.target.text.value = "";
+    document.querySelector('#add-task-form').style.display = 'none';
 
     // Prevent default form submit
     return false;

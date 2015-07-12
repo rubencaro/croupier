@@ -4,5 +4,9 @@ Template.addTaskForm.helpers({
   },
   lists: function(){
     return Lists.find();
+  },
+  projectsNames: function(list){
+    var ps = Projects.find({_id: {$in: list.projects}}, {sort: {name: 1}}).fetch();
+    return _.map(ps, function(p){return p.name});
   }
 });

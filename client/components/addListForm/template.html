@@ -3,6 +3,13 @@
   <form class="new-list" id="add-list-form" style="display:none;">
     <input type="text" name="name" placeholder="Type the name of the list" />
 
+    <label for="project">into project</label>
+    <select name="project" class="select-project">
+      {{#each projects}}
+        <option value="{{_id}}" selected="{{isDefault}}">{{name}}</option>
+      {{/each}}
+    </select>
+
     <input type="submit" value="Send"/>
   </form>
 

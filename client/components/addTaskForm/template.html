@@ -6,7 +6,7 @@
     <label for="list">into list</label>
     <select name="list" class="select-list">
       {{#each lists}}
-        <option value="{{_id}}" selected="{{isDefault}}">{{name}}</option>
+        <option value="{{_id}}" selected="{{isDefault}}">{{name}} - {{projectsNames this}}</option>
       {{/each}}
     </select>
 
