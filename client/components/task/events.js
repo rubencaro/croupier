@@ -29,6 +29,8 @@ Template.task.events({
     // console.log('drop');
     e.stopPropagation(); // stops the browser from redirecting.
     var data = JSON.parse(e.originalEvent.dataTransfer.getData('text/plain'));
+    console.dir(data);
+    console.dir(this);
     Meteor.call("relocateTask", data.taskId, data.sourceListId,
                                 this.position, this.renderingList._id );
     return false;
