@@ -1,4 +1,5 @@
 Template.addListForm.events({
+
   "submit .new-list": function (event) {
     var name = event.target.name.value;
     var project = event.target.project.value;
@@ -12,4 +13,5 @@ Template.addListForm.events({
     // Prevent default form submit
     return false;
   }
+  
 });

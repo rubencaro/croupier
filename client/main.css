@@ -34,15 +34,6 @@ form {
   position: relative;
 }
 
-.new-task input {
-  padding: 10px;
-  font-size: 1em;
-}
-
-.new-task input:focus{
-  outline: 0;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -63,6 +54,9 @@ li {
   list-style: none;
   padding: 15px;
   border-bottom: #eee solid 1px;
+}
+
+li.task{
   cursor: move;
 }
 
@@ -98,4 +92,8 @@ header .hide-completed {
 .list {
   width: 200px;
   float: left;
+}
+
+.empty-task {
+  border: 1px gray dashed;
 }

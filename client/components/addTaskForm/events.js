@@ -1,4 +1,5 @@
 Template.addTaskForm.events({
+
   "submit .new-task": function (event) {
     // This function is called when the new task form is submitted
 
@@ -14,4 +15,5 @@ Template.addTaskForm.events({
     // Prevent default form submit
     return false;
   }
+  
 });

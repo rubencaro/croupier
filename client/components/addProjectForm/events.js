@@ -1,4 +1,5 @@
 Template.addProjectForm.events({
+
   "submit .new-project": function (event) {
     var name = event.target.name.value;
 
@@ -11,4 +12,5 @@ Template.addProjectForm.events({
     // Prevent default form submit
     return false;
   }
+  
 });

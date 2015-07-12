@@ -5,6 +5,7 @@
       {{#each tasks this}}
         {{> task}}
       {{/each}}
+      {{> task empty=true renderingList=this position=lastPosition}}
     </ul>
   </div>
 </template>
