@@ -11,7 +11,8 @@ Template.task.events({
   },
   "dragstart": function (e) {
     // console.log('dragstart');
-    e.originalEvent.dataTransfer.setData('text/plain', this._id);
+    var data = {taskId: this._id, sourceListId: this.renderingList._id };
+    e.originalEvent.dataTransfer.setData('text/plain',JSON.stringify(data));
   },
   "dragenter": function (e) {
     // console.log('dragenter');
@@ -27,8 +28,9 @@ Template.task.events({
   "drop": function (e) {
     // console.log('drop');
     e.stopPropagation(); // stops the browser from redirecting.
-    Meteor.call("reorderTask", this.position,
-                    e.originalEvent.dataTransfer.getData('text/plain'));
+    var data = JSON.parse(e.originalEvent.dataTransfer.getData('text/plain'));
+    Meteor.call("relocateTask", data.taskId, data.sourceListId,
+                                this.position, this.renderingList._id );
     return false;
   },
   "dragend": function (e) {
