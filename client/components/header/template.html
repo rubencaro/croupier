@@ -9,13 +9,9 @@
 
     {{#if currentUser}}
       <button class="show-add-task-form">Add task</button>
-      <div id="add-task-form" style="display:none;">
-        {{> addTaskForm}}
-      </div>
+      {{> addTaskForm}}
       <button class="show-add-list-form">Add list</button>
-      <div id="add-list-form" style="display:none;">
-        {{> addListForm}}
-      </div>
+      {{> addListForm}}
     {{/if}}
   </header>
 </template>

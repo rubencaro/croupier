@@ -1,1 +1,1 @@
-Template.registerHelper('lists', function(){ Lists.find(); });
+Template.registerHelper('lists', function(){ return Lists.find(); });

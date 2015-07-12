@@ -1,6 +1,6 @@
 <template name="list">
   <div class="list">
-    <h3>{{this}} ({{incompleteCount this}}/{{totalCount this}})</h3>
+    <h3>{{this.name}} ({{incompleteCount this}}/{{totalCount this}})</h3>
     <ul>
       {{#each tasks this}}
         {{> task}}

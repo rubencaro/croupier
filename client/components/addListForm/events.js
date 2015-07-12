@@ -4,8 +4,9 @@ Template.addListForm.events({
 
     Meteor.call("addList", name);
 
-    // Clear form
+    // Clear/hide form
     event.target.name.value = "";
+    document.querySelector('#add-list-form').style.display = 'none';
 
     // Prevent default form submit
     return false;
