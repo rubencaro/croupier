@@ -1,0 +1,9 @@
+<template name="addTodoForm">
+
+  <form class="new-todo" id="add-todo-form" style="display:none;">
+    <input type="text" name="text" placeholder="Type to add new todos" />
+    <input type="hidden" name="task" value="{{task._id}}"/>
+    <input type="submit" value="Save"/>
+  </form>
+
+</template>

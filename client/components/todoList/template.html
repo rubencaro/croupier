@@ -1,11 +1,15 @@
 <template name="todoList">
-<ul class="todo-list">
-  {{#each task.todos}}
-    <li class="todo {{#if checked}}checked{{/if}}"
-        draggable="true">
-      <input class="todo-text" type="text" value="{{text}}" />
-      Position: {{position}}
-    </li>
-  {{/each}}
-</ul>
+<div>
+  <ul class="todo-list">
+    {{#each task.todos}}
+      <li class="todo {{#if checked}}checked{{/if}}"
+          draggable="true">
+        <input class="todo-text" type="text" value="{{text}}" />
+        Position: {{position}}
+      </li>
+    {{/each}}
+  </ul>
+  <button class="show-add-todo-form">Add todo</button>
+  {{> addTodoForm task=task}}
+</div>
 </template>
