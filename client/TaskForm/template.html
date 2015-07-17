@@ -31,6 +31,8 @@
     <div>{{#markdown}}{{text}}{{/markdown}}</div>
     <textarea class="text" rows="10" cols="80">{{text}}</textarea>
 
+    {{> todoList task=this}}
+
     <button class="close">Close</button>
   </div>
 </template>
