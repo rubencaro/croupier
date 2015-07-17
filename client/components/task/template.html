@@ -20,8 +20,11 @@
 
       <span class="text">
         <img class="avatar" src="{{picture}}"/>
-         - {{text}} - {{position}} - {{listsNames}} - {{projectsNames}} -
+         - {{text}} - {{position}} - {{listsNames}} -
       </span>
+
+      {{> listsLinks target=this}}
+
       <a href="/task/{{_id}}">Edit</a>
     </li>
   {{/if}}

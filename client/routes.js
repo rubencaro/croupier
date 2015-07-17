@@ -9,3 +9,11 @@ Router.route('/task/:_id', function () {
     }
   });
 });
+
+Router.route('/project/:_id', function () {
+  this.render('ProjectPane', {
+    data: function () {
+      return Projects.findOne({_id: this.params._id});
+    }
+  });
+});

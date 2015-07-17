@@ -1,0 +1,7 @@
+<template name="listsLinks">
+  <ul>
+    {{#each lists}}
+      {{name}} in project {{> projectsLinks target=this}}
+    {{/each}}
+  </ul>
+</template>
