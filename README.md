@@ -7,7 +7,7 @@ A very skilled card manager
 2. Install [MongoDB](https://www.mongodb.org/)
 3. Run `meteor` from project folder
 4. Visit http://localhost:3000/
-5. Change the code and see the live outcome
+5. Change the code and see the outcome live
 
 ## TODOs
 
