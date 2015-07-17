@@ -14,6 +14,14 @@ Template.TaskForm.events({
     Meteor.call("setLists", this._id, e.target.value);
   },
 
+  "change .title": function (e) {
+    Meteor.call("setTitle", this._id, e.target.value);
+  },
+
+  "change .text": function (e) {
+    Meteor.call("setText", this._id, e.target.value);
+  },
+
   // generic events
   "click .delete": function () {
     Meteor.call("deleteTask", this._id);
