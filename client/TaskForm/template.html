@@ -6,7 +6,7 @@
 
     <input class="title" type="text" value="{{title}}" />
 
-    <select name="list" class="select-list" multiple>
+    <select class="select-list" multiple>
       {{#each listsForTask}}
         <option value="{{_id}}" selected="{{isSelected}}">{{name}} - {{projectsNames}}</option>
       {{/each}}

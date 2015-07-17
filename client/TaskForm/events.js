@@ -11,7 +11,8 @@ Template.TaskForm.events({
   },
 
   "change .select-list": function (e) {
-    Meteor.call("setLists", this._id, e.target.value);
+    var lists = _.map(e.target.selectedOptions, function(o){ return o.value; });
+    Meteor.call("setLists", this._id, lists);
   },
 
   "change .title": function (e) {
