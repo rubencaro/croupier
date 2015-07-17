@@ -14,7 +14,6 @@ A very skilled card manager
 * Basic responsive layout https://atmospherejs.com/twbs/bootstrap
 * Regular user visibility model
 * Superuser gate
-* Markdown content https://atmospherejs.com/chuangbo/marked
 * Main user home
 * User options
 * Email notifications
