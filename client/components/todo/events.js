@@ -8,4 +8,8 @@ Template.todo.events({
     Meteor.call("setTodoText", this.task._id, this._id, e.target.value);
   },
 
+  "click .todo-delete": function () {
+    Meteor.call("deleteTodo", this.task._id, this._id);
+  },
+
 });
