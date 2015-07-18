@@ -10,5 +10,5 @@ Template.todoList.helpers({
     });
     return todos;
   }
-
+  
 });

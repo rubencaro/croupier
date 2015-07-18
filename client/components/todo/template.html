@@ -1,11 +1,15 @@
 <template name="todo">
-  <li class="todo {{#if checked}}checked{{/if}}"
-      draggable="true">
+  {{#if empty}}
+    <li class="empty-todo"></li>
+  {{else}}
+    <li class="todo {{#if checked}}checked{{/if}}"
+        draggable="true">
 
-    <button class="todo-delete">&times;</button>
+      <button class="todo-delete">&times;</button>
 
-    <input type="checkbox" checked="{{checked}}" class="toggle-todo-checked" />
-    <input class="todo-text" type="text" value="{{text}}" />
-    Position: {{position}}
-  </li>
+      <input type="checkbox" checked="{{checked}}" class="toggle-todo-checked" />
+      <input class="todo-text" type="text" value="{{text}}" />
+      Position: {{position}}
+    </li>
+  {{/if}}
 </template>

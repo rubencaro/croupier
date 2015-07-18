@@ -11,7 +11,6 @@ A very skilled card manager
 
 ## TODOs
 
-* TODOs space definition
 * Basic responsive layout https://atmospherejs.com/twbs/bootstrap
 * Regular user visibility model
 * Superuser gate

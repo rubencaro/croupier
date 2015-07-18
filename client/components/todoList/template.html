@@ -4,6 +4,7 @@
     {{#each todos task}}
       {{> todo}}
     {{/each}}
+    {{> todo empty=true}}
   </ul>
   <button class="show-add-todo-form">Add todo</button>
   {{> addTodoForm task=task}}

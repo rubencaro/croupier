@@ -94,6 +94,6 @@ header .hide-completed {
   float: left;
 }
 
-.empty-task {
+.empty-task, .empty-todo {
   border: 1px gray dashed;
 }

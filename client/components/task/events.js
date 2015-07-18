@@ -14,27 +14,22 @@ Template.task.events({
   },
 
   "dragstart": function (e) {
-    // console.log('dragstart');
     var data = {taskId: this._id, sourceListId: this.renderingList._id };
     e.originalEvent.dataTransfer.setData('text/plain',JSON.stringify(data));
   },
 
   "dragenter": function (e) {
-    // console.log('dragenter');
   },
 
   "dragover": function (e) {
-    // console.log('dragover');
     e.preventDefault(); // Necessary. Allows us to drop.
     return false;
   },
 
   "dragleave": function (e) {
-    // console.log('dragleave');
   },
 
   "drop": function (e) {
-    // console.log('drop');
     e.stopPropagation(); // stops the browser from redirecting.
     var data = JSON.parse(e.originalEvent.dataTransfer.getData('text/plain'));
     Meteor.call("relocateTask", data.taskId, data.sourceListId,
@@ -43,7 +38,6 @@ Template.task.events({
   },
 
   "dragend": function (e) {
-    // console.log('dragend');
   }
-  
+
 });
