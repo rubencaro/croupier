@@ -11,28 +11,46 @@ A very skilled card manager
 
 ## TODOs
 
-* Basic responsive layout https://atmospherejs.com/twbs/bootstrap
-* Regular user visibility model
-* Superuser gate
-* Main user home
-* User options
-* Email notifications
-* User mentions
-* Card mentions
-* Card dependency
-* Basic card search
-* Basic subject space definition
-* Upload files to S3
 * Main theme definition
-* Preview links to images
-* DnD to upload files
-* Preview links with metas
-* Card history
-* User activity log
-* Card auto open/close
-* User activity calendar
-* Card archival
-* Advanced search/filter
-* Arbitrary tags
-* Arbitrary colors
-* Finer permission model
+  * Basic responsive layout https://atmospherejs.com/twbs/bootstrap
+  * Finer details
+* User options facility (embedded into user?)
+* Main user home
+  * Configurable (_put this on my home_ button)
+* Notification system
+  * Basic sink for notifiable events
+  * Per user notifications section
+  * Email notifications
+  * Desktop notifications
+  * Deeply per user configurable notifications
+* Regular user visibility model
+  * Superuser gate
+  * Finer permission model
+* Search
+  * Basic card search
+  * Advanced search/filter
+  * Per user search saving
+* Content features
+  * Card mentions
+  * User mentions
+  * Upload files to S3
+  * Preview links to images
+  * DnD to upload files
+  * Preview links with metas
+  * Arbitrary tags
+  * Arbitrary colors
+  * Card archival
+* Log system
+  * Basic sink for events
+  * Filterable logs view
+  * User activity log
+  * User activity calendar
+  * Card history
+* Configurable hooks (if _this_ then _that_)
+  * Ex. Card auto open/close
+  * Grow the list of possible _this_
+  * Grow the list of possible _that_
+* Task meta grouping
+  * Basic _subject_ space definition
+  * Card dependency/relation
+  * Auto generated _subjects_ menu
