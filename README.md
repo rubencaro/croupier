@@ -45,8 +45,7 @@ A very skilled card manager
   * User activity calendar
   * Card history
   * Filterable logs view
-* Configurable hooks (if _this_ then _that_)
-  * Ex. Card auto open/close
+* Configurable hooks (if _this_ then _that_) Ex. Card auto open/close
   * Grow the list of possible _this_
   * Grow the list of possible _that_
 * Task meta grouping

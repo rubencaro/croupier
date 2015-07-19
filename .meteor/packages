@@ -9,3 +9,4 @@ accounts-ui
 accounts-google
 iron:router
 chuangbo:marked
+dburles:collection-helpers
