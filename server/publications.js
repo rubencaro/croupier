@@ -33,3 +33,5 @@ Meteor.publish("userData", function () {
     this.ready();
   }
 });
+
+Meteor.publish("logs", function(){ return Logs.find(); });

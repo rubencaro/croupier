@@ -41,11 +41,10 @@ A very skilled card manager
   * Arbitrary colors
   * Card archival
 * Log system
-  * Basic sink for events
-  * Filterable logs view
   * User activity log
   * User activity calendar
   * Card history
+  * Filterable logs view
 * Configurable hooks (if _this_ then _that_)
   * Ex. Card auto open/close
   * Grow the list of possible _this_
