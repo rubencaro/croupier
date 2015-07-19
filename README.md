@@ -14,6 +14,7 @@ A very skilled card manager
 * Main theme definition
   * Basic responsive layout https://atmospherejs.com/twbs/bootstrap
   * Finer details
+* Use collection-helpers, rearrange code using models
 * User options facility (embedded into user?)
 * Main user home
   * Configurable (_put this on my home_ button)
